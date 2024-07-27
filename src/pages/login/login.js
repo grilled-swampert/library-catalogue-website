@@ -10,7 +10,7 @@ export default function Login() {
       <div id="formContent">
         <h2 className="active"> SIGN IN </h2>
         <h2>
-          <a href="../registration page/index.html" className="inactive">REGISTER</a>
+          <Link to="/registration" className="inactive">REGISTER</Link>
         </h2>
         
         <img src={Logo} id="icon" alt="User Icon" />
@@ -18,7 +18,6 @@ export default function Login() {
         <form>
           <input type="text" id="login" name="login" placeholder="LOGIN" />
           <input type="password" id="password" name="password" placeholder="PASSWORD" />
-          <input type="submit" value="Log In" />
           <Link to="/home" className="submit">Log In</Link>
         </form>
       
