@@ -1,5 +1,5 @@
 import React from "react";
-import '../login/style.css';
+import "../login/log_style.css";
 import Logo from '../login/logo.jpg';
 import { Link } from "react-router-dom";
 
