@@ -1,5 +1,4 @@
 import React from "react";
-import "../registration/reg_style.css";
 import Image from "../registration/image.png";
 import { Link } from "react-router-dom";
 
@@ -12,7 +11,7 @@ export default function registration() {
         </h2>
         <h2 className="active">REGISTER</h2>
 
-        <img src={Image} id="icon" alt="User Icon" />
+        <img src={Image} id="registerIcon" alt="User Icon" />
 
         <form>
           <input type="text" id="name" name="name" placeholder="FULL NAME" />
@@ -28,9 +27,7 @@ export default function registration() {
           <input type="text" id="phone" name="phone" placeholder="CONTACT NUMBER" />
           <input type="password" id="password" name="password" placeholder="PASSWORD" />
           <input type="password" id="confirm" name="confirm" placeholder="CONFIRM PASSWORD" />
-          <a href="../login page/index.html">
-            <button type="button" className="link-button">Register</button>
-          </a>
+          <Link to="/" className="link-button"> Register </Link>
         </form>
 
         <div id="formFooter">

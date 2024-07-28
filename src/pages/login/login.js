@@ -1,5 +1,4 @@
 import React from "react";
-import "../login/log_style.css";
 import Logo from '../login/logo.jpg';
 import { Link } from "react-router-dom";
 
@@ -13,7 +12,7 @@ export default function Login() {
           <Link to="/registration" className="inactive">REGISTER</Link>
         </h2>
         
-        <img src={Logo} id="icon" alt="User Icon" />
+        <img src={Logo} id="loginIcon" alt="User Icon" />
       
         <form>
           <input type="text" id="login" name="login" placeholder="LOGIN" />
@@ -22,7 +21,7 @@ export default function Login() {
         </form>
       
         <div id="formFooter">
-          <Link to="/forgot-password">Forgot Password?</Link>
+          <Link to="/forgot-password" className="foot">Forgot Password?</Link>
         </div>
       </div>        
     </div>
