@@ -167,7 +167,7 @@ input[type=text]:placeholder {
 }
 
 .header-container {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 0px 0px 40px 40px;
 }
 
@@ -220,3 +220,82 @@ input[type=text]:placeholder {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.content {
+    display: flex;
+    justify-content:left;
+    flex-direction: column;
+    padding: 20px;
+    width: 90vh;
+    transform: translate(37%, 37%);
+    padding: 20px;
+}
+
+.content-container {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 30px;
+    width: 30vh;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+}
+
+.content h1, h3 {
+    color: white;
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: white; }
+    50% { color: rgb(127, 127, 127); }
+    100% { color: rgb(255, 255, 255); }
+}
+
+.saleInfo {
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateY(4%);
+    border-radius: 10px;
+}
+
+.content h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 0;
+    width: 60vh;
+}
+
+.content h3 {
+    margin-top: 0;
+    margin-right: 0;
+    width: 83vh;
+}
+
+.saleVisit {
+    background-color: rgba(255, 207, 155, 0.9);
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 3px solid black;
+    box-shadow: 2px 5px 0 0 black;
+    margin: 10px;
+    width: 35vh;
+}
+
+.saleVisit:hover {
+    transform: translateY(4px) translateX(2px);
+    box-shadow: 0px 0px 0 0 black;
+};
+  
+.saleVisit:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow:  2px 5px 0 0 black;
+};
