@@ -277,7 +277,7 @@ input[type=text]:placeholder {
     flex-direction: column;
     border-radius: 10px;
     padding: 20px;
-    transform: translate(20%, -97.5%);
+    transform: translate(20%, -98.5%);
 }
 
 .content-container:hover {
